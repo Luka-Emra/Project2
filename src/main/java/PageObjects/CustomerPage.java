@@ -38,7 +38,7 @@ public class CustomerPage {
         return this;
     }
 
-    @Step("move to customer service, upload file and send message")
+    @Step("upload file")
     public CustomerPage uploadFile() {
         attachFile.sendKeys(path);
         return this;
