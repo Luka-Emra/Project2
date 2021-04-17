@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" >
+    <test name="ChromeTest">
+        <groups>
+            <define name = "Regression1">
+                <include name ="method_2"/>
+            </define>
+            <define name = "Regression2">
+                <include name ="method_3"/>
+                <include name ="method_4"/>
+            </define>
+        </groups>
+        <classes>
+            <class name="Tests.BaseClass"/>
+            <class name="Tests.TestClass"/>
+        </classes>
+    </test>
+</suite>
